@@ -15,18 +15,18 @@ We are proposing to redesign the [pascalcoin.org][pascal-website] website. This 
 ## Timeline
 * Completion of deliverable #1: 12 days.
 * Completion of deliverable #2: 2-6 days (varies depending on the number of revision requests).
-* Completion of deliverable #3: 30 days.
-* Completion of deliverable #4: 14 days.
+* Completion of deliverable #3: 18 days.
+* Completion of deliverable #4: 15 days.
 
 ## Payment Schedule
 * $2000: Upon completion of (1).
 * $500: Upon completion of (2).
-* $4000: Upon completion of (3)
+* $3000: Upon completion of (3)
 * $2000: Upon the completion of (4)
 
-Total: $8500
+Total: $7500
 
-(It is extremely rare that more than 3 rounds of revision requests will be required during the design process, but if that's the case, each round of revisions after the 3rd one will cost an additional $250)
+It is extremely rare that more than 3 rounds of revision requests will be required during the design process (deliverable #2), but if that's the case, each round of revisions after the 3rd one will cost an additional $250.
 
 ## Licensing
 The design, artwork, animations, and other assets that are created by us for this proposal will be released under [**CC0**][creative-commons] license, or any license suggested by PascalCoin Foundation.
