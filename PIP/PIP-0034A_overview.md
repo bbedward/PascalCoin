@@ -1,4 +1,4 @@
-# PIP-0034A Overview: Website UI/UX Redesigns
+# PIP-0034A Overview: New PascalCoin Website
 ## Full PIP: https://github.com/bbedward/PascalCoin/blob/pip-0034b/PIP/PIP-0034A.md
 
 ## Overview
