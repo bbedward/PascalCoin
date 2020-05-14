@@ -801,11 +801,6 @@ begin
   methodName := '';
   paramsTxt := '';
   // IP Protection
-  If (Not _RPCServer.IsValidClientIP(FSock.GetRemoteSinIP,FSock.GetRemoteSinPort)) then begin
-    TLog.NewLog(lterror,Classname,FSock.GetRemoteSinIP+':'+inttostr(FSock.GetRemoteSinPort)+' INVALID IP');
-    _RPCServer.AddRPCLog(FSock.GetRemoteSinIP+':'+InttoStr(FSock.GetRemoteSinPort),' INVALID IP');
-    exit;
-  end;
   errNum := CT_RPC_ErrNum_InternalError;
   errDesc := 'No data';
   valid := false;
