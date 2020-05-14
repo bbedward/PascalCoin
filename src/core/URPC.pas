@@ -680,7 +680,7 @@ begin
   if FValidIPs='' then begin
     TLog.NewLog(ltupdate,Classname,'Updated RPC Server valid IPs to ALL');
     // New Build 3.0.2
-    FAllowUsePrivateKeys := False; // By default, when opening RPC server to all IP's, use of private keys is forbidden to protect server
+    FAllowUsePrivateKeys := True; // By default, when opening RPC server to all IP's, use of private keys is forbidden to protect server
   end else TLog.NewLog(ltupdate,Classname,'Updated RPC Server valid IPs to: '+FValidIPs)
 end;
 
@@ -727,7 +727,7 @@ begin
   FRPCServerThread := Nil;
   FPort := CT_JSONRPC_Port;
   FCallsCounter := 0;
-  FValidIPs := '127.0.0.1;localhost'; // New Build 1.5 - By default, only localhost can access to RPC
+  FValidIPs := ''; // New Build 1.5 - By default, only localhost can access to RPC
   FAllowUsePrivateKeys := True;       // New Build 3.0.2 - By default RPC allows to use private keys functions
   FNode := TNode.Node;
   If Not assigned(_RPCServer) then _RPCServer := Self;
