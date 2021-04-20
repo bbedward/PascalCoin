@@ -941,19 +941,11 @@ procedure TRPCServer.SetValidIPs(const Value: String);
 begin
   if FValidIPs=Value then exit;
   FValidIPs := Value;
-  if FValidIPs='' then begin
-    TLog.NewLog(ltupdate,Classname,'Updated RPC Server valid IPs to ALL');
-    // New Build 3.0.2
-    FAllowUsePrivateKeys := False; // By default, when opening RPC server to all IP's, use of private keys is forbidden to protect server
-  end else TLog.NewLog(ltupdate,Classname,'Updated RPC Server valid IPs to: '+FValidIPs)
 end;
 
 function TRPCServer.IsValidClientIP(const clientIp: String; clientPort: Word): Boolean;
 begin
-  if FValidIPs='' then Result := true
-  else begin
-    Result := pos(clientIP,FValidIPs) > 0;
-  end;
+  Result := true
 end;
 
 function TRPCServer.CheckAndGetPrivateKeyInWallet(const APublicKey : TAccountKey; var APrivateKey : TECPrivateKey; Var AErrorNum : Integer; Var AErrorDesc : String) : Boolean;
